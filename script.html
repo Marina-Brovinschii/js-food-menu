@@ -1,0 +1,51 @@
+<script>
+    food_1_name = "Pizza"
+    food_1_price = 110.00
+    food_2_name = "Salata"
+    food_2_price = 75.00
+    food_3_name = "Burgher"
+    food_3_price = 55.00
+    food_4_name = "Inghetata"
+    food_4_price = 35.00
+    food_5_name = "Sprite"
+    food_5_price = 30.00
+    unitPrice = "lei"
+
+    alert("-------------MENU-------------\n" +
+            "1. " + food_1_name + " " + food_1_price + unitPrice  +
+            "\n2. " + food_2_name + " " + food_2_price + unitPrice +
+            "\n3. " + food_3_name + " " + food_3_price + unitPrice +
+            "\n4. " + food_4_name + " " + food_4_price + unitPrice +
+            "\n5. " + food_5_name + " " + food_5_price + unitPrice +
+            "\n-------------MENU-------------")
+
+    food_1_quantity = parseInt(prompt(`Cite unitati de "${food_1_name}" doriti sa faceti comanda?`))
+    food_2_quantity = parseInt(prompt(`Cite unitati de "${food_2_name}" doriti sa faceti comanda?`))
+    food_3_quantity = parseInt(prompt(`Cite unitati de "${food_3_name}" doriti sa faceti comanda?`))
+    food_4_quantity = parseInt(prompt(`Cite unitati de "${food_4_name}" doriti sa faceti comanda?`))
+    food_5_quantity = parseInt(prompt(`Cite unitati de "${food_5_name}" doriti sa faceti comanda?`))
+
+    cost_1 = food_1_price * food_1_quantity
+    cost_2 = food_2_price * food_2_quantity
+    cost_3 = food_3_price * food_3_quantity
+    cost_4 = food_4_price * food_4_quantity
+    cost_5 = food_5_price * food_5_quantity
+
+    costTotal = cost_1 + cost_2 + cost_3 + cost_4 + cost_5
+    
+    freeDelivery = costTotal > 200
+
+    alert("-------------CEC-------------\n" +
+            "1. " + food_1_name + " " + "x" + food_1_quantity + "=" + cost_1 +
+            "\n2. " + food_2_name + " " + "x" + food_2_quantity + "=" + cost_2 +
+            "\n3. " + food_3_name + " " + "x" + food_3_quantity + "=" + cost_3 +
+            "\n4. " + food_4_name + " " + "x" + food_4_quantity + "=" + cost_4 +
+            "\n5. " + food_5_name + " " + "x" + food_5_quantity + "=" + cost_5 +
+            "\n-----------------------------" +
+            "\nTotal " + costTotal + unitPrice +
+            "\nLivrarea " + ":" + freeDelivery +
+            "\n-------------CEC-------------")
+
+    alert("Comanda dvs v-a fi gata in 45min\n Multumim pentru comanda!")
+
+</script>
