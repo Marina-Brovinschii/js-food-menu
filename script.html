@@ -12,11 +12,11 @@
     unitPrice = "lei"
 
     alert("-------------MENU-------------\n" +
-            "1. " + food_1_name + " " + food_1_price + unitPrice  +
-            "\n2. " + food_2_name + " " + food_2_price + unitPrice +
-            "\n3. " + food_3_name + " " + food_3_price + unitPrice +
-            "\n4. " + food_4_name + " " + food_4_price + unitPrice +
-            "\n5. " + food_5_name + " " + food_5_price + unitPrice +
+            "1. " + food_1_name + " " + food_1_price + "  " + unitPrice  +
+            "\n2. " + food_2_name + " " + food_2_price + " " + unitPrice +
+            "\n3. " + food_3_name + " " + food_3_price + " " + unitPrice +
+            "\n4. " + food_4_name + " " + food_4_price + " " + unitPrice +
+            "\n5. " + food_5_name + " " + food_5_price + " " + unitPrice +
             "\n-------------MENU-------------")
 
     food_1_quantity = parseInt(prompt(`Cite unitati de "${food_1_name}" doriti sa faceti comanda?`))
@@ -36,13 +36,13 @@
     freeDelivery = costTotal > 200
 
     alert("-------------CEC-------------\n" +
-            "1. " + food_1_name + " " + "x" + food_1_quantity + "=" + cost_1 +
-            "\n2. " + food_2_name + " " + "x" + food_2_quantity + "=" + cost_2 +
-            "\n3. " + food_3_name + " " + "x" + food_3_quantity + "=" + cost_3 +
-            "\n4. " + food_4_name + " " + "x" + food_4_quantity + "=" + cost_4 +
-            "\n5. " + food_5_name + " " + "x" + food_5_quantity + "=" + cost_5 +
+            "1. " + food_1_name +" " + "x" + " "  + food_1_quantity + " " + "=" + " " + cost_1 + " " + unitPrice +
+            "\n2. " + food_2_name + " " + "x" + " " + food_2_quantity + " " + "=" + " " + cost_2 + " " + unitPrice +
+            "\n3. " + food_3_name + " " + "x" + " " + food_3_quantity + " " + "=" + " " + cost_3 + " " + unitPrice +
+            "\n4. " + food_4_name + " " + "x" + " " + food_4_quantity + " " + "=" + " " + cost_4 + " " + unitPrice +
+            "\n5. " + food_5_name + " " + "x" + " " + food_5_quantity + " " + "=" + " " + cost_5 + " " + unitPrice +
             "\n-----------------------------" +
-            "\nTotal " + costTotal + unitPrice +
+            "\nTotal: " + costTotal + " " + unitPrice +
             "\nLivrarea " + ":" + freeDelivery +
             "\n-------------CEC-------------")
 
